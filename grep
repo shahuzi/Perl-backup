@@ -1,0 +1,13 @@
+use strict;
+use warnings;
+
+my $what = shift @ARGV;
+
+while(<>)
+{
+	if(/($what)/)
+	{
+		print;
+		# print "We saw $what in beginning of $_\n";
+	}
+}
